@@ -19,6 +19,7 @@ const EbayCal = () => {
           </h1>
         </div>
         {/* side div ended */}
+    
         {/* image div */}
         <div>
             <img src={three} className="w-[400px] rounded-3xl"/>

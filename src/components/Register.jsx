@@ -59,6 +59,7 @@ const Register = () => {
         progress: undefined,
       });
       navigate('/')
+      window.location.reload();
       // Handle the response data as needed
     } catch (error) {
       console.error("Error:", error);
@@ -105,6 +106,14 @@ const Register = () => {
         progress: undefined,
       });
     }
+    setFormData({
+      name: '',
+      email: '',
+      password: '',
+      birth: '',
+      number: '',
+      gender: '',
+    })
   };
   return (
     <div>
@@ -139,7 +148,7 @@ const Register = () => {
                     id="email"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    class="bg-gray-50 border rounded-2xl border-gray-300 text-white text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    class="bg-gray-50 border rounded-2xl border-gray-300 text-black text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     placeholder="name@flowbite.com"
                     required
                   />
@@ -156,7 +165,7 @@ const Register = () => {
                     id="password"
                     value={password}
                     onChange={(e) => setPassword(e.target.value)}
-                    class="bg-gray-50 border rounded-2xl border-gray-300 text-white text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                    class="bg-gray-50 border rounded-2xl border-gray-300 text-black text-sm  focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     required
                   />
                 </div>

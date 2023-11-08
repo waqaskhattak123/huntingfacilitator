@@ -9,7 +9,7 @@ const UpperAboutHeader = () => {
       <div>
         <Navbar/>
         <div>
-            <h1 className='text-center text-5xl text-red-600 h-[50px] font-semibold mt-6'>About Us</h1>
+            <h1 className='text-center text-5xl text-red-600 h-[50px] font-semibold mt-6'>About Us </h1>
        
             {/* trusted by */}
             <div className='h-[150px]'>
