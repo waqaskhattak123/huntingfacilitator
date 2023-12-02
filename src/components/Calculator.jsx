@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-
+// ffffffffffffff
 const Calculator = () => {
   const [soldPrice, setSoldPrice] = useState(0);
   const [shippingCharged, setShippingCharged] = useState(0);
@@ -53,7 +53,6 @@ const Calculator = () => {
         <h1 className="mb-4 h-24 text-lg bg-[#F6F6F6] text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
           Ebey Fee Calculator
         </h1>
-
 
         <hr
           className="mt-10 w-[880px] bg-[#000000] relative ml-48"
@@ -312,16 +311,21 @@ const Calculator = () => {
           </div>
         )}
       </div>
-      <button type="button" onClick={calculateEbayFeeAndProfit} className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Calculate</button>
+      <button
+        type="button"
+        onClick={calculateEbayFeeAndProfit}
+        className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+      >
+        Calculate
+      </button>
       <div className="grid grid-cols-2 gap-2 mt-10 mr-10 ml-10">
         <div>
           <div className="flex items-center mr-4">
             <h1 className=" relative ml-16 text-2xl text-red text-red-600 font-bold">
-              Ebey Fee   {fee}
-
+              Ebey Fee {fee}
             </h1>
             <h1 className="relative ml-48 text-2xl text-red text-red-600 font-bold">
-            Sales: {sales}
+              Sales: {sales}
             </h1>
           </div>
           <p className="font-bold text-xl mt-10">
@@ -331,7 +335,7 @@ const Calculator = () => {
         <div>
           <div className="flex items-center mr-4">
             <h1 className=" relative ml-16 text-2xl text-red text-red-600 font-bold">
-              Total Profit:   {Perfit}
+              Total Profit: {Perfit}
             </h1>
           </div>
           <p className="font-bold text-xl mt-10 ml-10">
@@ -340,9 +344,9 @@ const Calculator = () => {
         </div>
       </div>
       <hr
-          className="mt-5 w-[880px] bg-[#000000] relative ml-48"
-          style={{ height: "2px" }}
-        ></hr>
+        className="mt-5 w-[880px] bg-[#000000] relative ml-48"
+        style={{ height: "2px" }}
+      ></hr>
       <Footer />
     </div>
   );
