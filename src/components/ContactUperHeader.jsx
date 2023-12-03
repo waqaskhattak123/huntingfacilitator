@@ -13,7 +13,10 @@ const ContactUperHeader = () => {
         <hr></hr>
         <div>
           {/* form started */}
-          <form className="mx-[500px] mt-6" onSubmit={(e)=>e.preventDefault()}>
+          <form
+            className="mx-3 sm:grid sm:grid-cols-2 md:grid-cols-3 gap-3 mt-6"
+            onSubmit={(e) => e.preventDefault()}
+          >
             <div className="mb-6">
               <label
                 htmlFor="email"
@@ -91,7 +94,7 @@ const ContactUperHeader = () => {
           {/* form started ended */}
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

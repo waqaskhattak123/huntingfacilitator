@@ -13,33 +13,36 @@ import ProductDiscrpt from "./components/ProductDiscrpt";
 import MoreDiscription from "./components/MoreDiscription";
 import Register from "./components/Register";
 import { ToastContainer } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
-
+import "react-toastify/dist/ReactToastify.css";
+import AOS from "aos";
+import "aos/dist/aos.css"; // You can also use <link> for styles
+// ..
+AOS.init();
 function App() {
   return (
-    <>
-    <ToastContainer/>
-    <BrowserRouter>
-    <Routes>
-      {/* <Route path="navbar" element={}/> */}
-      <Route path="/" element={<LandingPage/>}/>
-      <Route path="/about" element={  <Aboutus/>}/>
-      <Route path="/contactus" element={<ContactUs/>}></Route>
-      <Route path="/privacy" element={<Privacy/>}></Route>
-      {/* <Route path="/login" element={<Login/>}></Route> */}
-      {/* <Route path="/signup" element={<SignUp/>}></Route> */}
-      <Route path="/profile" element={<Profile/>}></Route>
-      <Route path="/productdisp" element={<Productsdis/>}></Route>
-      <Route path="/calculator" element={<CalculatorPg/>}></Route>
-      <Route path="/productdiscription/:id" element={<ProductDiscrpt/>}></Route>
-      <Route path="/productmoredispcription" element={<MoreDiscription/>}></Route>
-      <Route path="/register" element={<Register/>}></Route>
-    </Routes>
-    </BrowserRouter>
-     
-     
-   
-    </>
+    <div className="">
+      <ToastContainer />
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/about" element={<Aboutus />} />
+          <Route path="/contactus" element={<ContactUs />}></Route>
+          <Route path="/privacy" element={<Privacy />}></Route>
+          <Route path="/profile" element={<Profile />}></Route>
+          <Route path="/productdisp" element={<Productsdis />}></Route>
+          <Route path="/calculator" element={<CalculatorPg />}></Route>
+          <Route
+            path="/productdiscription/:id"
+            element={<ProductDiscrpt />}
+          ></Route>
+          <Route
+            path="/productmoredispcription"
+            element={<MoreDiscription />}
+          ></Route>
+          <Route path="/register" element={<Register />}></Route>
+        </Routes>
+      </BrowserRouter>
+    </div>
   );
 }
 

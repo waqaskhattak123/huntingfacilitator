@@ -1,15 +1,17 @@
 import React from "react";
-import three from '../images/three.png'
+import three from "../images/three.png";
 
 const EbayCal = () => {
   return (
     <div className="bg-[#F9F8F8]">
       {/* main div */}
-      <div className=" text-center flex flex-row-reverse mx-[200px] mt-[80px]">
+      <div className=" text-center mt-[10px]">
         {/* side div */}
-        <div className="w-[500px] mx-10">
-          <h1 className="text-[#C00B27] mt-4 text-3xl font-bold">Search your product </h1>
-          <h1 className="text-lg leading-10">
+        <div className="">
+          <h1 className="text-[#C00B27] text-3xl mt-10 font-bold">
+            Search your product{" "}
+          </h1>
+          <h1 className=" leading-10 p-[30px]">
             "Find Your Product: Our powerful search tool simplifies the hunt for
             your desired items. Effortlessly browse through a vast selection of
             products across various categories, ensuring you discover exactly
@@ -19,15 +21,14 @@ const EbayCal = () => {
           </h1>
         </div>
         {/* side div ended */}
-    
+
         {/* image div */}
-        <div>
-            <img src={three} className="w-[400px] rounded-3xl"/>
+        <div data-aos="zoom-in-up">
+          <img src={three} className="w-auto mx-auto rounded-3xl" />
         </div>
         {/* image div ended */}
       </div>
       {/* main div ended */}
-     
     </div>
   );
 };

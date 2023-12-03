@@ -9,7 +9,7 @@ const UserProfileComp = () => {
   const [data, setdata] = useState(false);
   console.log(Profile);
   const getAuth = localStorage.getItem("Token");
-  
+
   const getData1 = async () => {
     try {
       setdata(true);
@@ -37,7 +37,6 @@ const UserProfileComp = () => {
   const handlelogout = () => {
     localStorage.clear();
     window.location.reload();
-  
   };
   // console.log(Profile)
   return (
@@ -45,13 +44,13 @@ const UserProfileComp = () => {
       <Navbar />
       {data ? (
         <div>
-          <div className="bg-[#F6F6F6] mx-[100px] h-[100px] rounded-xl mb-[242px] ">
-            <div className="flex items-center space-x-4 mx-4 mt-11 pt-5 bg-[#F6F6F6]">
+          <div className="bg-[#F6F6F6] h-[100px] rounded-xl mb-[242px] ">
+            <div className="flex items-center space-x-4 mt-11 pt-5 bg-[#F6F6F6]">
               <img className="w-10 h-10 rounded-full " src={three} />
               <div className="font-medium dark:text-white">
                 <div>Name </div>
                 <div className="text-sm text-gray-500 dark:text-gray-400">
-                No Name
+                  No Name
                 </div>
               </div>
               <div className="font-medium dark:text-white">
@@ -70,7 +69,7 @@ const UserProfileComp = () => {
           </div>
         </div>
       ) : (
-        <div className="bg-[#F6F6F6] mx-[100px] h-[100px] rounded-xl mb-[242px] ">
+        <div className="bg-[#F6F6F6] h-[100px] rounded-xl mb-[242px] ">
           <div className="flex items-center space-x-4 mx-4 mt-11 pt-5 bg-[#F6F6F6]">
             <img className="w-10 h-10 rounded-full " src={three} />
             <div className="font-medium dark:text-white">

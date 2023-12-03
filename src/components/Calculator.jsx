@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-// ffffffffffffff
+
 const Calculator = () => {
   const [soldPrice, setSoldPrice] = useState(0);
   const [shippingCharged, setShippingCharged] = useState(0);
@@ -50,17 +50,14 @@ const Calculator = () => {
     <div>
       <Navbar />
       <div className="">
-        <h1 className="mb-4 h-24 text-lg bg-[#F6F6F6] text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
+        <h1 className="mb-4 h-24 pt-[30px] text-lg bg-[#F6F6F6] text-center font-extrabold leading-none tracking-tight text-gray-900 md:text-2xl lg:text-3xl dark:text-white">
           Ebey Fee Calculator
         </h1>
 
-        <hr
-          className="mt-10 w-[880px] bg-[#000000] relative ml-48"
-          style={{ height: "2px" }}
-        ></hr>
+        <hr className="mt-10 bg-[#000000] relative"></hr>
       </div>
-
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+      {/* calculator starts */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 mx-4">
         <div className="mb-6">
           <label
             for="text"
@@ -311,20 +308,22 @@ const Calculator = () => {
           </div>
         )}
       </div>
+      {/* calculator ended */}
       <button
         type="button"
         onClick={calculateEbayFeeAndProfit}
-        className="text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+        className="text-white w-full sm:w-1/2 lg:w-1/3 bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
       >
         Calculate
       </button>
-      <div className="grid grid-cols-2 gap-2 mt-10 mr-10 ml-10">
+      <div className=" grid grid-cols-2 mt-10">
         <div>
           <div className="flex items-center mr-4">
-            <h1 className=" relative ml-16 text-2xl text-red text-red-600 font-bold">
-              Ebey Fee {fee}
+            <h1 className=" relative  text-2xl text-red text-red-600 font-bold">
+              EbeyFee {fee}
             </h1>
-            <h1 className="relative ml-48 text-2xl text-red text-red-600 font-bold">
+
+            <h1 className="relative  text-2xl text-red text-red-600 font-bold">
               Sales: {sales}
             </h1>
           </div>
@@ -333,20 +332,17 @@ const Calculator = () => {
           </p>
         </div>
         <div>
-          <div className="flex items-center mr-4">
-            <h1 className=" relative ml-16 text-2xl text-red text-red-600 font-bold">
+          <div className="flex items-center">
+            <h1 className=" relative text-2xl text-red text-red-600 font-bold">
               Total Profit: {Perfit}
             </h1>
           </div>
-          <p className="font-bold text-xl mt-10 ml-10">
+          <p className="font-bold text-xl mt-10">
             Profit margin: 82.86% of sold price
           </p>
         </div>
       </div>
-      <hr
-        className="mt-5 w-[880px] bg-[#000000] relative ml-48"
-        style={{ height: "2px" }}
-      ></hr>
+
       <Footer />
     </div>
   );

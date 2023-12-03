@@ -4,17 +4,17 @@ import Footer from "./Footer";
 
 const PrivacyUperHeader = () => {
   return (
-    <div>
+    <div className="mx-3">
       <Navbar />
-      <div>
-        <h1 className="text-center text-5xl text-red-600 h-[70px] font-semibold mt-6">
+      <div className="text-center">
+        <h1 className="text-5xl text-red-600 h-[70px] font-semibold mt-6">
           Privacy Policy
         </h1>
         <hr></hr>
       </div>
-      <div className="mx-[200px] text-center justify-center">
-        <h1 className="font-bold text-2xl">
-          Privacy Policy for eBay Calculator
+      <div className="justify-center text-justify">
+        <h1 className="font-bold text-center text-2xl">
+          Privacy Policy for eBay Calculato
         </h1>
         <span className="justify-center font-semibold leading-9">
           Website This Privacy Policy outlines how your personal information is
@@ -25,7 +25,7 @@ const PrivacyUperHeader = () => {
           Service.
         </span>
       </div>
-      <div className="mx-[200px] text-center justify-center">
+      <div className="text-center justify-center">
         <h1 className="font-bold text-2xl">Personal Information</h1>
         <span className="justify-center font-semibold leading-9">
           When you use the eBay Calculator website, we may collect personally
@@ -35,7 +35,7 @@ const PrivacyUperHeader = () => {
           when you use certain features of the Service.
         </span>
       </div>
-      <div className="mx-[200px] text-center justify-center">
+      <div className=" text-center justify-center">
         <h1 className="font-bold text-2xl">Usage Data</h1>
         <span className="justify-center font-semibold leading-9">
           We may also collect non-personal information about your interactions
@@ -46,7 +46,7 @@ const PrivacyUperHeader = () => {
           aggregate use
         </span>
       </div>
-      <div className="mx-[200px] text-center justify-center">
+      <div className="text-center justify-center">
         <h1 className="font-bold text-2xl">
           Cookies and Tracking Technologies
         </h1>
@@ -60,7 +60,7 @@ const PrivacyUperHeader = () => {
           Policy.
         </span>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 };

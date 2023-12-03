@@ -1,39 +1,37 @@
 import React from "react";
-import two from '../images/two.png'
+import two from "../images/two.png";
 
 const MoreDiscription = () => {
   return (
     <div>
       <>
         {/* main div started */}
-        <div>
+        <div className="mx-2">
           <div>
-            <h1 className="text-3xl font-bold mx-[70px] mt-[20px]">
-              Item Purchase History
+            <h1 className="text-3xl font-bold mt-[20px]">
+              Item Purchase History...
             </h1>
           </div>
-          <div className="flex flex-row mx-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 mx-4">
             <img src={two} alt="" className="w-[200px] h-[200px]" />
-            <h1 className="text-3xl font-bold mx-4 pt-5 text-blue-400 underline cursor-pointer">
+            <h1 className="text-lg font-bold text-blue-400 underline cursor-pointer">
               Personlized Custom Mens T-Shirt New USA Gift
             </h1>
           </div>
-          <div className="mx-10">
+          <div className="">
             <div className="flex flex-row">
               <h1 className="text-xl font-bold">Shipping:</h1>
-              <span className=" font-semibold mx-[150px]">
+              <span className=" font-semibold">
                 Free Standard Shipping-USPS First Class
               </span>
             </div>
             <div className="flex flex-row">
               <h1 className="text-xl font-bold">Quantity:</h1>
-              <span className=" font-semibold mx-[150px]">
-                More Than 10 Available
-              </span>
+              <span className=" font-semibold">More Than 10 Available</span>
             </div>
             <div className="flex flex-row">
               <h1 className="text-xl font-bold">Item Number:</h1>
-              <span className=" font-semibold mx-[110px]">979797473</span>
+              <span className=" font-semibold">979797473</span>
             </div>
             <div>
               <h1 className="mt-4 text-2xl font-bold mb-4">
